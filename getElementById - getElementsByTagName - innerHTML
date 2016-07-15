@@ -14,3 +14,13 @@
 
 var cambioTesto = document.getElementById('lista');
 cambioTesto.innerHTML = 'Scrivo codice <b>HTML</b>';
+
+
+/* */
+/*function myFunction()
+	{
+		document.getElementsByTagName('p')[0].innerHTML = "Testo modificato tramite js";     
+	}
+
+myFunction = "ciao";
+alert (myFunction);*/
