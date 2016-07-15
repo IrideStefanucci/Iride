@@ -1,0 +1,66 @@
+
+<style>
+body{font-family: arial;padding:40px; margin:0; background: #eee; color:#333}
+.subtitle{color:#999; font-size: 20px}
+.pesto{text-decoration: line-through; color: red;}
+.red{color: red;}
+#ingrediente{text-decoration: line-through; color: red;}
+.spesa{color: blue;}
+.new1{font-size:20px;}
+.new2{font-size:50px; font-color:blu;}
+.new3{font-size:200px;}
+.new4{font-size:20px; font-style: italic;}
+</style>
+
+/* */
+
+<body>
+<h1>Javascript</h1>
+<p class="subtitle">Tutorial base</p>
+<p>Introduzione a Javascript</p>
+<p>Esempio:</p>
+<p><strong>Lista della spesa</strong></p>
+	
+<ul id="lista" class="spesa">
+	<li>Pasta</li>
+	<li class="pesto">Pesto</li>
+	<li>Sale!</li>
+</ul> 
+</body>
+
+/* */
+
+<script>
+//AGGIUNGI CLASS
+alert("aggiungo new1");
+lista.classList.add("new1");
+alert("aggiungp new2");
+lista.classList.add("new2");
+
+//RIMUOVI CLASS
+alert("rimuovo new2");
+lista.classList.remove("new2");
+
+//TOOGLE SU CLASS (rimuova la classe specificata e poi la rimette)
+alert("toggle new2");
+lista.classList.toggle("new2");
+
+//OUTPUTS SU CLASS (sulla console esce "true se la classe ceracta e è presente, altrimenti false)
+console.log(lista.classList.contains("new1"));
+console.log(lista.classList.contains("lalala"));
+
+//AGGIUNGE CLASSI MULTIPLE
+alert("aggiungo new3 e new4");
+lista.classList.add("new3", "new4");
+
+//IMPOSTARE UNA CLASSE A TUTI GLI ELEMENTI DI UNA LISTA
+alert("aggiungo /classe .pesto/ a tutti gli elementi della lista ");
+var elementi = document.getElementsByTagName("li");
+for (var i=0; i<elementi.length; i++){
+	elementi[i].className = "pesto";
+}
+
+</script> 
+</html>
+
+
